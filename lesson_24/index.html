@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 23</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__homework homework-page">
+            <div class="homework-page__container">
+               <h1 class="homework-page__title">lesson 24</h1>
+               <!-- 1 -->
+               <div class="homework-page__operator">
+                  <div class="js">
+                     <div class="js__image">
+                        <img src="img/home_1.png" alt="Screen">
+                     </div>
+                     <div class="js__content">
+                        <h2 class="js__title">Домашка № 1 (функції)</h2>
+                        <ol class="js__list">
+                           <li class="js__item"><span>Задача № 1 - </span>'Вася!'</li>
+                           <li class="js__item"><span>Задача № 2 - </span>так, функія визвана вірно.</li>
+                           <li class="js__item"><span>Задача № 3 - </span>не вірно.</li>
+                           <li class="js__item"><span>Задача № 4 - </span>викликати змінну після привласнення функції
+                              змінній. Або- let showMessadge;
+                              showMessadge = function () {
+                              console.log('Сообщение');
+                              }
+                              showMassadge();</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- 2 -->
+               <div class="homework-page__operator">
+                  <div class="js">
+                     <div class="js__image">
+                        <img src="img/home_2.png" alt="Screen">
+                     </div>
+                     <div class="js__content">
+                        <h2 class="js__title">Домашка № 2 (масиви)</h2>
+                        <ol class="js__list">
+                           <li class="js__item"><span>Задача № 1 - </span>Ми получимо length - 4.</li>
+                           <li class="js__item"><span>Задача № 2 - </span>
+                              let users = ['Ваня', 'Іштван'];
+                              <p>users.push('Оля');</p>
+                              <p>users[1] = 'Петя';</p>
+                              <p>users.shift();</p>
+                              <p>users.unshift('Маша', 'Паша');</p>
+                           </li>
+                           <li class="js__item"><span>Задача № 3 - </span>let arr = ['Ваня', 'Іштван', 'Оля',];
+                              <p>let newArr = arr.splice(1, 1);</p>
+                           <li class="js__item"><span>Задача № 4 - </span>let str = 'Ваня,Іштван,Оля';
+                              <p>let arr = str.split(',');</p>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- 3 -->
+               <div class="homework-page__operator">
+                  <div class="js">
+                     <div class="js__image">
+                        <img src="img/home_3.png" alt="Screen">
+                     </div>
+                     <div class="js__content">
+                        <h2 class="js__title">Домашка № 3 (DOM)</h2>
+                        <ol class="js__list">
+                           <li class="js__item"><span>Задача № 1 - </span>
+                              <div data-say-hi="yes">Привіт!</div>
+                              const element = document.querySelectorAll('[data-say-hi]');
+                              console.log(element);
+                           </li>
+                           <li class="js__item"><span>Задача № 2 - </span>
+                              const elem = document.querySelectorAll('li');
+                              cosole.log(elem[1]);
+                           </li>
+                           <li class="js__item"><span>Задача № 3 - </span>
+                              const like = document.querySelectorAll('.like');</li>
+                           <li class="js__item"><span>Задача № 4 - </span>li буде в середині тегу ul в кінці коду.</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+               <!-- 4 -->
+               <div class="homework-page__operator">
+                  <div class="js">
+                     <div class="js__image">
+                        <img src="img/home_4.png" alt="Screen">
+                     </div>
+                     <div class="js__content">
+                        <h2 class="js__title">Домашка № 4 (розміри прокрутки)</h2>
+                        <ol class="js__list">
+                           <li class="js__item"><span>Задача № 1 - </span>Ширина полоси прокрутки- 17px.
+                              <p>const mainElement =
+                                 document.documentElement;
+                                 const mainElementWidth = mainElement.clientWidth;
+                                 const windowWidth = window.innerWidth;</p>
+                           </li>
+                           <li class="js__item"><span>Задача № 2 - </span></li>
+                           <li class="js__item"><span>Задача № 3 - </span>const item =
+                              document.querySelector('.homework-page__title');
+                              const getItemCoords = item.getBoundingClientRect().left;
+                              const getItemCoord = item.getBoundingClientRect().top;
+                              console.log(getItemCoords);
+                              console.log(getItemCoord);</li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

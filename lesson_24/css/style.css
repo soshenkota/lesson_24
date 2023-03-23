@@ -1,0 +1,92 @@
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   background: #808080;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #3fada8, #808080);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.page {
+}
+.page__homework {
+}
+.homework-page {
+   
+
+}
+.homework-page__title{
+   text-decoration: underline;
+   font-size: 40px;
+   color: red;
+   text-align: center;
+   padding-top: 50px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+.homework-page__container {
+   max-width: 1260px;
+   margin: 0 auto;
+   padding: 0 15px;
+   
+}
+.homework-page__operator {
+   margin-bottom: 50px;
+}
+.js {
+   display: flex;
+   gap: 30px;
+   font-size: 20px;
+   padding: 50px 0;
+   align-items: center;
+}
+@media (max-width: 888px){
+   .js{
+      gap: 10px; 
+      font-size: 16px;
+   }
+}
+@media (max-width: 768px){
+    .js{
+      flex-direction: column;
+      padding: 20px 0;
+    } 
+    .js__title{
+      text-align: center;
+   }  
+   .homework-page__operator {
+      margin-bottom: 0px;
+   }
+   .homework-page__title{
+      padding-top: 10px;
+   }
+}
+.js__title {
+}
+.js__list {
+}
+.js__text {
+}
+.js__item {
+   margin-bottom: 10px;
+}
+.js__item span{
+   color: red;
+}
+.js__image {
+ flex: 1 1 50%;
+ border-radius: 50px;
+ background: #e0e0e0;
+ box-shadow:  -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+ transition: all 0.5s ease 0s;
+}
+.js__image:hover{
+   transform: scale(0.9);
+}
+.js__image img{
+  max-width: 100%;
+}
+.js__content{
+   flex: 0 1 50%;
+}
